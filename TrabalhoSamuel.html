@@ -21,7 +21,7 @@
             <span>Fechar</span>
         </div>
 
-        <header>
+        <header id="home">
 
             <div class="img.wrapper">
             <img src="imagens/fundo3.jpg"alt="">
@@ -36,10 +36,12 @@
         <div class="sidebar">
             <nav>
                 <ul class="menu">
-                    <li class="menu-item"><a href="#" class="menu-link">Inicio</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Inscrição</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
+                    <li class="menu-item"><a href="#home" class="menu-link">Inicio</a></li>
+                    <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a href="#habilidades" class="menu-link">Habilidades</a></li>
+                    <li class="menu-item"><a href="#inscricao" class="menu-link">Inscrição</a></li>
+                    <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
+                    <li class="menu-item"><a href="#orcamento" class="menu-link">Orçamento</a></li>
                 </ul>
             </nav>
         
@@ -55,7 +57,7 @@
 
         </div>
 
-        <section class="sessao-projetos">
+        <section class="sessao-projetos" id="projetos">
             <div class="sessao-header" >
                 <h1>Projetos</h1>
             </div>
@@ -102,7 +104,7 @@
             </div>
         </section>
 
-        <section class="sessao-ensinos">
+        <section class="sessao-ensinos" id="habilidades">
             <div class="sessao-header">
                 <h1>Habilidades</h1>
             </div>
@@ -143,7 +145,7 @@
         </div>
         </section>
 
-        <section class="sessao-inscricao">
+        <section class="sessao-inscricao" id="inscricao">
             <div class="inscricao-wrapper">
                 <div class="inscricao-left"></div>
                 <div class="inscricao-right">
@@ -158,7 +160,7 @@
             </div>
         </section>
         
-        <section class="sessao-contato">
+        <section class="sessao-contato" id="contato">
             <div class="contato-wrapper">
                 <div class="contato-left"></div>
                 <div class="contato-right">
@@ -181,6 +183,50 @@
                 </div>
             </div>
         </section>
+       
+        <section class="sessao-orcamento" id="orcamento">
+            <div class="orcamento-wrapper">
+                <h1>Faça um Orçamento</h1>
+                <form>
+                    <label for="qtade">Qtade de tempo na música/beat</label>
+                    <input type="number" min="1" max="8" name="qtade" id="qtade">
+                    <label for="tipo" >O gênero da música</label>
+                    <input type="text" name="tipo" id="tipo">
+                    <label>Sample</label>
+                    <div class="group-sample">
+                        <div>
+                            <input type="radio" name="sample" id="sample-sim">
+                            <label for="sample-sim">Não tenho uma sample</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="sample" id="sample-nao">
+                            <label for="sample-nao">Já tenho uma sample</label>
+                        </div>
+                    </div>
+                    <label for="prazo">Prazo</label>
+                    <input type="range" name="prazo" min="1" max="5" id="prazo">
+                    <label id="preco">R$ 0,00</label>
+                    <button class="btn-orcamento">Enviar</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-content">
+                <p>
+                    Copyright &copy; 2020, Samuel Victor - Todos os direitos reservados  
+                </p>
+                <div class="social-list">
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-soundcloud"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <a href="#home" id="link-topo">
+            <i class="fas fa-arrow-up"></i>
+        </a>
     </div>
 
     

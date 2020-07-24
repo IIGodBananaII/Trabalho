@@ -10,7 +10,9 @@
     
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 .hamburguer{
     width: 2rem;
@@ -53,7 +55,6 @@
 .show-menu #line3{
     opacity: 0;
     transform: rotate(360deg);
-    
 }
 
 .hamburguer span{
@@ -70,6 +71,7 @@
     border-radius: 5px;
     opacity: 0;
     transition: 1s;
+    z-index: 100;
 }
 
 .show-menu .hamburguer:hover span{
@@ -153,11 +155,11 @@ header{
     width: 20rem;
     height: 100vh;
     background-color: #ffffff;
-    
     position: fixed;
     top: 0;
     right: -20rem;
     transition: all 2s;
+    z-index: 50;
 }
 
 .show-menu .sidebar{
@@ -171,7 +173,6 @@ header{
     left: 50%;
     transform: translate(-50%, -50%);
     font-family:'Orbitron', sans-serif ; 
-
 }
 
 .menu-item{
@@ -219,6 +220,8 @@ header{
 }
 
 .projetos{
+    width: 100%;
+    height: 95vh;
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(6, 6rem);
@@ -289,6 +292,8 @@ header{
 
 .sessao-ensinos{
     background-color:#434343;
+    width: 100%;
+    height: 95vh;
 }
 
 .ensinos{
@@ -493,12 +498,133 @@ header{
 
 .btn-submit{
     text-transform: uppercase;
+    font-size: .9rem;
     width: 100%;
-    height: 1.3rem;
+    height: 1.5rem;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.sessao-orcamento{
+    width: 100%;
+    height: 100vh;
+    background: url(./imagens/orcamento.jpg);
+    color: #ffffff;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orcamento-wrapper{
+    width: 60%;
+    height: 80%;
+    background-color: #43434399;
+    border-radius: .5rem;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.sessao-orcamento h1{
+    position: absolute;
+    top: -2.5rem;
+    left: 2rem;
     background: #000000;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: 'Righteous';
-    color: rgb(255, 255, 255);
+    padding: 0.2rem;
+    font-size: 2rem;
+    font-weight: lighter;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+    border-radius: .5rem;
+}
+
+.sessao-orcamento form{
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
+    row-gap: 2.5rem;
+}
+
+.sessao-orcamento label{
+    font-family: 'Righteous';
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.sessao-orcamento input[type="number"]{
+    font-family: 'Orbitron', sans-serif;
+    width: 2.5rem;
+    font-size: 1.5rem;
+    outline: none;
+    border-radius: .5rem;
+    border: none;
+    padding: 1.3rem;
+}
+
+.btn-orcamento{
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    padding: 1rem;
     cursor: pointer;
+    grid-column: 2;
+    background: #c31432; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #c31432, #240b36); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #c31432, #240b36); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #ffffff;
+}
+
+footer{
+    width:100%;
+    height: 7rem;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p{
+    font-family: 'Orbitron', sans-serif;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.social-list a{
+    margin: 0 2rem;
+    color: #434343;
+    font-size: 1.3rem;
+}
+
+.social-list ul{
+    display: flex;
+}
+
+#link-topo{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background: #c31432; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #c31432, #240b36); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #c31432, #240b36); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+    color: #ffffff;
 }
