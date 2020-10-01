@@ -48,8 +48,6 @@ html{
 .show-menu #line2{
     background-color: rgb(0, 0, 0);
     transform: rotate(-55deg);
-    position: absolute;
-    top: 43%;
 }
 
 .show-menu #line3{
